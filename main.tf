@@ -102,7 +102,7 @@ resource "aws_s3_bucket" "default" {
 }
 
 module "s3_user" {
-  source       = "git::https://github.com/woz5999/terraform-aws-iam-s3-user.git?ref=fixed"
+  source       = "git::https://github.com/cloudposse/terraform-aws-iam-s3-user.git?ref=0.10.0"
   namespace    = var.namespace
   stage        = var.stage
   environment  = var.environment
